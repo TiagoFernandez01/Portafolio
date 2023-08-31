@@ -8,7 +8,7 @@ const NavBar = () => {
         <>
             <div className="w-full text-white rounded-lg p-4 grid md:grid-cols-12 gap-4 items-center justify-center">
                 <h1 className="md:col-span-2 flex justify-center md:justify-start font-bold cursor-pointer text-3xl">
-                    Brand
+                    TFZ
                 </h1>
                 <nav className="md:col-span-8 flex items-center gap-4 justify-center">
                     <a
