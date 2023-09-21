@@ -3,9 +3,10 @@ import foto from '../../assets/imgs/perfil.jpg'
 import linkedin from '../../assets/imgs/linkedin.png'
 import github from '../../assets/imgs/github.png'
 import gif from '../../assets/imgs/gif.gif'
-import reactLogo from '../../assets/imgs/react-logo.png'
 import { Link } from "react-router-dom";
-import Cards from "./Cards";
+import Cards from "./Cards.jsx";
+import Abilities from "../abilities.jsx"
+import '../../Styles/animations.css';
 
 const Home = () => {
 
@@ -13,12 +14,12 @@ const Home = () => {
         <>
             <body className="w-full">
                 <section>
-                    <div className="flex  flex-col mt-16 items-center bg-gray-900 gap-2">
-                        <h1 className="text-5xl font-bold text-cyan-600">Tiago Fernandez</h1>
-                        <h2 className="text-2xl text-white mb-6"> Desarrollador Web Full Stack</h2>
-                        <p className=" text-white p-2 ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, unde quis eos cum fuga labore obcaecati voluptatum error.</p>
+                    <div className="flex  flex-col mt-16 items-center bg-gray-900 gap-2 px-4 font-font2">
+                        <h1 className="text-6xl font-bold text-cyan-600 ">Tiago Fernandez</h1>
+                        <span className="typing-animation text-2xl text-white my-4 font-font1"> Desarrollador Web Full Stack.</span>
+                       
 
-                        <div className="mb-24 mt-14 flex space-x-9">
+                        <div className=" mb-16 mt-8 flex space-x-9">
                             <Link to='https://www.linkedin.com/in/tiago-fernandez-75752823b/'>
                                 <img class=" w-12" src={linkedin} alt="linkedin logo" />
                             </Link>
@@ -33,18 +34,20 @@ const Home = () => {
                 <main className="mt-20">
                     <div>
                         <div className="p-4 flex flex-col">
-                            <div className="mb-6 text-cyan-600 text-5xl">
-                                <h3>Mis proyectos</h3>
+                            <div className="mb-6 font-bold text-cyan-600 text-5xl">
+                                <h3 className="ml-4">Mis proyectos</h3>
                             </div>
-                            <Cards />
+                            <div>
+                                <Cards />
+                            </div>
                         </div>
                     </div>
                 </main>
 
                 <section>
 
-                    <div className="mt-20 bg-[#5487ff]">
-                        <div className="flex justify-end p-4 mb-6 text-blue-950 text-5xl">
+                    <div className="mt-20 bg-[#5487ff] p-4">
+                        <div className="flex justify-end p-4 mb-6 text-blue-950 font-bold text-5xl">
                             <h3>Sobre Mi</h3>
                         </div>
 
@@ -61,13 +64,14 @@ const Home = () => {
 
                             <div className="lg:w-[550px] sm:w-full">
                                 <img className="" src={gif} alt="" />
-                                <img className="" src={reactLogo} alt="" />
                             </div>
                         </div>
                     </div>
-
-
                 </section>
+
+                <div>
+                    <Abilities />
+                </div>
             </body>
 
 

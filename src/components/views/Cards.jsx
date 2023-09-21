@@ -47,7 +47,7 @@ const Cards = () => {
         <>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-xl px-4">
                 {cardData.map((card, index) => (
-                    <div key={index} className="max-w-xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <div key={index} className="transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 max-w-xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
 
                         <img className="rounded-t-lg" src={card.imageSrc} alt="" />
 
