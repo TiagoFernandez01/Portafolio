@@ -24,8 +24,8 @@ import zoomLogo from '../assets/imgs/zoom-logo.png'
 function SkillItem({ src, text }) {
     return (
       <div className="flex flex-col items-center flex-wrap">
-        <img className="w-16" src={src} alt="" />
-        <p>{text}</p>
+        <img className="w-12" src={src} alt="" />
+        <p className="font-font2">{text}</p>
       </div>
     );
   }
@@ -76,10 +76,10 @@ function SkillItem({ src, text }) {
     return (
       <>
         <div className="flex flex-col items-center mt-10">
-          <h3 className="font-bold text-cyan-600 text-5xl">Mis Habilidades</h3>
+          <h3 className="font-bold text-cyan-600 text-5xl font-font2 py-2">Mis Habilidades</h3>
           {sections.map((section, index) => (
             <div className="flex flex-col items-center" key={index}>
-              <h4 className="text-4xl font-bold text-white">{section.title}</h4>
+              <h4 className="text-4xl font-bold text-white font-font2">{section.title}</h4>
               <div className="flex flex-wrap justify-center items-center text-white gap-4 my-8">
                 {section.skills.map((skill, skillIndex) => (
                   <SkillItem key={skillIndex} src={skill.src} text={skill.text} />
