@@ -1,5 +1,5 @@
 import React from "react";
-//import foto from '../assets/imgs/perfil.png'
+import foto from '../assets/imgs/perfil.png'
 import linkedin from '../assets/imgs/linkedin.png'
 import github from '../assets/imgs/github.png'
 import programmerGif from '../assets/imgs/programmer.gif'
@@ -34,7 +34,7 @@ const Home = () => {
                                     </Link>
                                 </div>
 
-                                <img class="rounded-full w-96 h-96" src={linkedin} alt="foto perfil" />
+                                <img class="rounded-full w-96 h-96" src={foto} alt="foto perfil" />
 
                                 <button class="button mt-8" type="button">
                                     <span class="button__text">Curriculum</span>
