@@ -2,7 +2,41 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { BsLinkedin } from 'react-icons/Bs';
 import { BsGithub } from 'react-icons/Bs';
+import { useEffect } from "react";
 const NavBar = () => {
+
+    useEffect(() => {
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const target = document.querySelector(this.getAttribute('href'));
+
+                window.scrollTo({
+                    top: target.offsetTop,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Limpiar el event listener cuando el componente se desmonta
+        return () => {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.removeEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    const target = document.querySelector(this.getAttribute('href'));
+
+                    window.scrollTo({
+                        top: target.offsetTop,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        };
+    }, []);
+
+
 
     return (
         <>
@@ -11,32 +45,32 @@ const NavBar = () => {
                     TFZ
                 </h1>
                 <nav className="md:col-span-8 flex items-center gap-4 justify-center">
-                    <a
-                        href="#"
+                    <Link
+                        to="#inicio"
                         className="xl:py-1 xl:px-2 rounded-lg hover:bg-gray-800 transition-colors"
                     >
                         Inicio
-                    </a>
+                    </Link>
                     <a
-                        href="#"
+                        href="#about-me"
                         className="xl:py-1 xl:px-2 rounded-lg hover:bg-gray-800 transition-colors"
                     >
                         Sobre Mi
                     </a>
                     <a
-                        href="#"
+                        href="#proyects"
                         className="xl:py-1 xl:px-2 rounded-lg hover:bg-gray-800 transition-colors"
                     >
                         Proyectos
                     </a>
                     <a
-                        href="#"
+                        href="#skills"
                         className="xl:py-1 xl:px-2 rounded-lg hover:bg-gray-800 transition-colors"
                     >
                         Skills
                     </a>
                     <a
-                        href="#"
+                        href="#contact"
                         className="xl:py-1 xl:px-2 rounded-lg hover:bg-gray-800 transition-colors"
                     >
                         Contacto

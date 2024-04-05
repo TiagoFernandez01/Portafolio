@@ -25,7 +25,7 @@ function SkillItem({ src, text }) {
     return (
       <div className="flex flex-col items-center flex-wrap">
         <img className="w-12" src={src} alt="" />
-        <p className="font-font2">{text}</p>
+        <p className="font-font1">{text}</p>
       </div>
     );
   }

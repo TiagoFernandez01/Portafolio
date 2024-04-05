@@ -1,8 +1,9 @@
 import React from "react";
-import Chikara from '../../assets/imgs/Chikara.png'
-import Weather from '../../assets/imgs/Weather.png'
-import Dogs from '../../assets/imgs/Dogs.png'
-import Cotizador from '../../assets/imgs/cotizador.png'
+import Chikara from '../assets/imgs/Chikara.png'
+import Weather from '../assets/imgs/Weather.png'
+import Dogs from '../assets/imgs/Dogs.png'
+import Cotizador from '../assets/imgs/cotizador.png'
+import Plate from '../assets/imgs/plate.png'
 
 
 const Cards = () => {
@@ -17,7 +18,7 @@ const Cards = () => {
         {
             title: 'The Clean Plate',
             description: 'E-commerce realizado en grupo, destinado a la venta de alimentos y productos saludables, donde se podra comprar y pagar virtualmente. El usuario se podra loguear y el admin cuenta con una seccion de control de Stcok y usuarios registrados.',
-            imageSrc: '/docs/images/blog/image-2.jpg',
+            imageSrc: Plate,
             lenguages: ['React', 'MongoDB','Mongoose', 'Redux', 'NodeJs', 'Express', 'JavaScript', 'Stripe','SCRUM'],
         },
         {

@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
-import Home from './components/views/Home'
+import Home from './components/Home'
 
 function App() {
-
+      
   return (
     <>
       <Routes>
