@@ -1,7 +1,7 @@
 import React from "react";
 import Chikara from '../assets/imgs/Chikara.png'
 import Weather from '../assets/imgs/Weather.png'
-import Dogs from '../assets/imgs/Dogs.png'
+import Dogs from '../assets/imgs/dogs.png'
 //import Cotizador from '../assets/imgs/cotizador.png'
 import Plate from '../assets/imgs/plate.png'
 
