@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { BsLinkedin } from 'react-icons/Bs';
-import { BsGithub } from 'react-icons/Bs';
+import { BsLinkedin } from 'react-icons/bs';
+import { BsGithub } from 'react-icons/bs';
 import { useEffect } from "react";
 const NavBar = () => {
 
