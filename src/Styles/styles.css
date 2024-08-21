@@ -1,25 +1,22 @@
-.typing-animation {
-  display: block;
+/* .typing-animation {
   font-family: monospace;
   white-space: nowrap;
   border-right: 4px solid;
-  width: 29ch;
-
-  animation: typing 3s steps(29), blink .5s infinite step-end alternate;
+  width: 26ch;
+  animation: typing 4s steps(26), blink .75s step-end infinite alternate;
   overflow: hidden;
 }
 
 @keyframes typing {
-  from {
-    width: 0;
-  }
+  from { width: 0; }
+  to { width: 26ch; }
 }
 
 @keyframes blink {
   50% {
     border-color: transparent;
   }
-}
+} */
 
 .remove-bg {
   filter: brightness(1.1);

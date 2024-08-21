@@ -45,23 +45,25 @@ const NavBar = () => {
                     TFZ
                 </h1>
                 <nav className="md:col-span-8 flex items-center gap-4 justify-center">
-                    <Link
-                        to="#inicio"
+                    
+                <a
+                        href="#inicio"
                         className="xl:py-1 xl:px-2 rounded-lg hover:bg-gray-800 transition-colors"
                     >
                         Inicio
-                    </Link>
-                    <a
-                        href="#about-me"
-                        className="xl:py-1 xl:px-2 rounded-lg hover:bg-gray-800 transition-colors"
-                    >
-                        Sobre Mi
                     </a>
+                  
                     <a
                         href="#proyects"
                         className="xl:py-1 xl:px-2 rounded-lg hover:bg-gray-800 transition-colors"
                     >
                         Proyectos
+                    </a>
+                    <a
+                        href="#about-me"
+                        className="xl:py-1 xl:px-2 rounded-lg hover:bg-gray-800 transition-colors"
+                    >
+                        Sobre Mi
                     </a>
                     <a
                         href="#skills"

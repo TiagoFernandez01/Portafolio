@@ -1,9 +1,11 @@
 import React from "react";
-import Chikara from '../assets/imgs/Chikara.png'
-import Weather from '../assets/imgs/Weather.png'
-import Dogs from '../assets/imgs/dogs.png'
+import Chikara from '../assets/imgs/Chikara.webp'
+import Weather from '../assets/imgs/Weather.webp'
+import Dogs from '../assets/imgs/dogs.webp'
+import Design from '../assets/imgs/design.webp'
+import Academia from '../assets/imgs/academia.webp'
 //import Cotizador from '../assets/imgs/cotizador.png'
-import Plate from '../assets/imgs/plate.png'
+import Plate from '../assets/imgs/plate.webp'
 
 
 const Cards = () => {
@@ -11,7 +13,7 @@ const Cards = () => {
     const cardData = [
         {
             title: 'Chikara Coaching Online',
-            description: 'Pagina web creada para ofrecer un servicio de asesoramiento online de entrenamineto y nutricíon.',
+            description: 'Página web creada para ofrecer un servicio de asesoramiento online de entrenamineto y nutrición.',
             imageSrc: Chikara,
             lenguages: ['HTML', 'JavaScript', 'CSS', 'SASS'],
         },
@@ -19,7 +21,7 @@ const Cards = () => {
             title: 'The Clean Plate',
             description: 'E-commerce realizado en grupo, destinado a la venta de alimentos y productos saludables, donde se podra comprar y pagar virtualmente. El usuario se podra loguear y el admin cuenta con una seccion de control de Stcok y usuarios registrados.',
             imageSrc: Plate,
-            lenguages: ['React', 'MongoDB','Mongoose', 'Redux', 'NodeJs', 'Express', 'JavaScript', 'Stripe','SCRUM'],
+            lenguages: ['React', 'MongoDB','Mongoose', 'Redux','redux-toolkit','TailwindCSS', 'NodeJs', 'Express', 'JavaScript', 'Stripe','SCRUM'],
         },
         {
             title: 'Weather App',
@@ -33,15 +35,18 @@ const Cards = () => {
             imageSrc: Dogs,
             lenguages: ['React', 'JavaScript', 'CSS','Redux', 'PostgreSql', 'Sequelize','TheDogApi'],
         },
-       /* {
-            title: 'Ninj Seguros',
-            description: 'Cotizador de Seguros para motos, selecciona tu marca y año de moto, opte por el plan que quiera y cotice al instante! ',
-            imageSrc: Cotizador,
-            lenguages: ['HTML', 'JavaScript', 'CSS'],
-        },*/
-        
-
-
+        {
+            title: 'Bassiskisstvo',
+            description: 'Sitio web para una marca de diseño grafico en la cual se ofrecen sus servicios, se aexponenen sus trabajos en una galeria y contacto mediante e-mail, WhatsApp y redes sociales.',
+            imageSrc: Design,
+            lenguages: ['React', 'JavaScript', 'TailwindCss', 'MongoDB', 'Mongoose','Cludinary'],
+        },
+        {
+            title: 'Academia de Boxeo',
+            description: 'En construcción... ',
+            imageSrc: Academia,
+            lenguages: ['React', 'JavaScript', 'TailwindCss','Flowbite','En proceso...'],
+        },
     ];
 
     return (
@@ -50,7 +55,7 @@ const Cards = () => {
                 {cardData.map((card, index) => (
                     <div key={index} className="transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300 max-w-xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
 
-                        <img className="rounded-t-lg" src={card.imageSrc} alt="" />
+                        <a href=""><img className="rounded-t-lg" src={card.imageSrc} alt="" /> </a>
 
                         <div className="p-5">
                             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{card.title}</h5>
