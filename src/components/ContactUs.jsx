@@ -20,7 +20,7 @@ function ContactUs() {
     const sendEmail = () => {
         emailjs
             .sendForm(
-                "service_4fzhu9m",
+                "service_puu31dj",
                 "template_20aijbo",
                 form.current,
                 "m6TTjBZSGwNOPwkur"
